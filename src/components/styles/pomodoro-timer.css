@@ -1,0 +1,166 @@
+.b-container{
+    border: 1px solid #0ce9e1;
+    border-radius: 15px;
+    display: inline-flex;
+    padding: 10px 5px;
+    margin: 10px 0;
+}
+
+.k-button.b {
+    cursor: default;
+    color: #3d3d3d;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0px 5px;
+    transition: all ease 250ms;
+    position: relative;
+}
+
+.k-button.b:hover {
+    background-color: transparent;
+}
+
+.b.active{
+    color: #00fff7;
+}
+
+.k-button.b.active::after{
+    content: '';
+    display: inline;
+    opacity: 1;
+    width: 0;
+    height: 2px;
+    background-color: #00fff7;
+    position: absolute;
+    top: 100%;
+    bottom: -1px;
+    left: 10%;
+    transition: all ease 200ms;
+}
+.k-button.b.active::after{
+    width: 80%;
+}
+
+.b-w{
+    border: none;
+    border-radius: 10px 0 0 10px;
+}
+.b-lb{
+    border-radius: 0 10px 10px 0;
+}
+
+.b-container-state .b-s, .b-container-state .b-p{
+    background-color: transparent;
+    margin: 5px 10px;
+    border-radius: 10px;
+    padding: 6px 10px;
+    border: 1px solid #00fff7;
+    transition: all ease 350ms;
+}
+
+.b-container-state .b-s.active{
+    color: #00fff7;
+} 
+
+.b-container-state .b-p.desactive{
+    color: #00fff7;
+} 
+
+.b-container-state .b-s:hover, .b-container-state .b-p:hover{
+    cursor: pointer;
+}
+
+.k-button.b-config{
+    color: #fff;
+    background-color: transparent;
+    margin: 5px;
+    border: none;
+    padding: 5px;
+    font-size: 1.3rem;
+    line-height: 0;
+    transition: all ease 300ms;
+}
+
+.k-button.b-config:hover {
+    background-color: transparent;
+}
+
+.b-config.active-config {
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+/*Timer*/
+
+.container-pomodoro-timer{
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+}
+.container-pomodoro-timer .time {
+    display: flex;
+    justify-content: center;
+}
+
+.container-pomodoro-timer p {
+    margin: .5em 0;
+}
+
+/*Container state*/
+
+.b-container-state {
+    margin: 25px 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+/*Config popover*/
+
+.k-popup.k-popover {
+    background-color: #3d3d3d;
+    color: #fff;
+}
+
+.k-popover-actions .k-button.b-save,
+.k-popover-actions .k-button.b-cancel {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    transition: all ease 250ms;
+}
+
+.k-popover-actions .k-button.b-save:hover {
+    color: #00fff7;
+    background-color: rgba(222, 222, 224, .1);
+}
+
+.k-popover-actions .k-button.b-cancel:hover {
+    color: #de0000;
+    background-color: rgba(222, 222, 224, .1);
+}
+
+.k-card-body.inputs-config {
+    display: flex;
+    flex-direction: column;
+}
+
+.k-slider.slider-work-periods {
+    margin-bottom: 2em;
+}
+
+.k-progressbar.k-progressbar-horizontal {
+    margin: 10px 0;
+    width: 60%;
+    height: 5px;
+    background-color: #3d3d3d;
+}
+
+.k-progressbar.k-progressbar-horizontal .k-selected {
+    background-color: #00fff7;
+}
+

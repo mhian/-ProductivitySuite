@@ -1,0 +1,72 @@
+#root {
+  text-align: center;
+}
+
+header {
+  grid-area: header;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #BFA181;
+}
+
+.pomodoro .title-section, .calendar .title-section, .kanban .title-section {
+  color: #BFA181;
+  font-size: 2rem;
+  margin: 25px 0;
+}
+
+.pomodoro {
+  grid-area: pomodoro;
+}
+
+.calendar{
+  grid-area: calendar;
+}
+
+.kanban {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  grid-area: kanban;
+}
+
+.kanban .title-section {
+  width: 100%;
+}
+
+.kanban .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.kanban .container .row {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.kanban .container .row .col {
+  min-width: 300px;
+  margin: 10px 15px;
+}
+
+.container-app{
+  display: grid;
+  grid-template-areas: 
+  "header header"
+  "pomodoro calendar"
+  "kanban kanban";
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.mobile {
+  display: none;
+}
